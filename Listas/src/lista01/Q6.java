@@ -11,16 +11,16 @@ public class Q6 {
 		double[] imc = new double[6];
 		double peso;
 		double altura;
-		int acima = 0;
 		int abaixo = 0;
 		int ideal = 0;
+		int acima = 0;
 		
 		
 		for(int i = 1; i <= 5; i++) {
-			System.out.println(+i+"∞ pessoa informe seu peso: ");
+			System.out.println(+i+"¬∞ pessoa informe seu peso: ");
 			peso= scan.nextDouble();
 			
-			System.out.println(+i+"∞ pessoa informe sua altura: ");
+			System.out.println(+i+"¬∞ pessoa informe sua altura: ");
 			altura = scan.nextDouble();
 			
 			imc[i] = peso / (altura * altura);
@@ -33,7 +33,7 @@ public class Q6 {
 			
 			if(imc[j] < 18.5) {
 				
-				acima += 1;
+				abaixo += 1;
 				
 				
 			}else if(imc[j] > 18.5 && imc[j] < 25) {
@@ -44,7 +44,7 @@ public class Q6 {
 				
 			}else if(imc[j] >= 25) {
 				
-				abaixo += 1;
+				acima += 1;
 				
 				
 			}
@@ -52,9 +52,9 @@ public class Q6 {
 		
 		}
 		
-		System.out.println(+acima+" pessoa(s) est„o acima do peso");
-		System.out.println(+ideal+" pessoa(s) est„o com o peso ideal");
-		System.out.println(+abaixo+" pessoa(s) est„o abaixo do peso");
+		System.out.println(+abaixo+" pessoa(s) est√£o abaixo do peso");
+		System.out.println(+ideal+" pessoa(s) est√£o dentro do peso ideal");
+		System.out.println(+acima+" pessoa(s) est√£o acima do peso");
 		
 	
 		}
